@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 /*! tailwindcss v4.1.3 | MIT License | https://tailwindcss.com */
 @layer properties {
   @supports (((-webkit-hyphens: none)) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color: rgb(from red r g b)))) {
@@ -1695,10 +1694,6 @@
     text-align: left;
   }
 
-  .font-\[\'Amazon_Ember_Display\:Bold\'\,sans-serif\] {
-    font-family: Amazon Ember Display\:Bold, sans-serif;
-  }
-
   .font-\[\'Amazon_Ember_Display\:Regular\'\,sans-serif\] {
     font-family: Amazon Ember Display\:Regular, sans-serif;
   }
@@ -2207,7 +2202,7 @@
 
 @font-face {
   font-family: Amazon Ember;
-  src: url("https://drive.google.com/uc?export=download&id=1d60jrVZ3OV74CL_sCGtYzP_xi1RWMtSH") format("truetype");
+  src: local(Amazon Ember), local(AmazonEmber-Regular), url("https://cdn.jsdelivr.net/gh/romadave17/Testfigmamakefreshplaylist@main/fonts/AmazonEmber_Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -2215,23 +2210,38 @@
 
 @font-face {
   font-family: Amazon Ember;
-  src: url("https://drive.google.com/uc?export=download&id=15fK8mZCQHzgGRPc8adDTU740W60ORoqK") format("truetype");
-  font-weight: 500;
+  src: local(Amazon Ember Bold), local(AmazonEmber-Bold), url("https://cdn.jsdelivr.net/gh/romadave17/Testfigmamakefreshplaylist@main/fonts/AmazonEmber_Bold.ttf") format("truetype");
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: Amazon Ember;
-  src: url("https://drive.google.com/uc?export=download&id=1AZzwssb-QC-gi9yff0Gt3ILRjlktLag6") format("truetype");
+  src: local(Amazon Ember Medium), local(AmazonEmber-Medium), url("https://cdn.jsdelivr.net/gh/romadave17/Testfigmamakefreshplaylist@main/fonts/AmazonEmber_Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Ember_Modern_Display_Standard\:Regular;
+  src: local(Amazon Ember), local(AmazonEmber-Regular), url("https://cdn.jsdelivr.net/gh/romadave17/Testfigmamakefreshplaylist@main/fonts/AmazonEmber_Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Ember_Modern_Display_Standard\:Bold;
+  src: local(Amazon Ember Bold), local(AmazonEmber-Bold), url("https://cdn.jsdelivr.net/gh/romadave17/Testfigmamakefreshplaylist@main/fonts/AmazonEmber_Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
-
 :root {
-  --font-family: "Amazon Ember", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica", "Arial", sans-serif;
+  --font-family: "Amazon Ember", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica", "Arial", sans-serif;
   --font-size: 16px;
   --background: #fff;
   --foreground: oklch(.145 0 0);

@@ -8,7 +8,7 @@ function Guides() {
       <div className="absolute bg-[#d8d8d8] inset-[-30.96%_-52.64%_-50.64%_-54.64%] opacity-40" data-name="Background_Image">
         <div aria-hidden="true" className="absolute border-[#f4f4f4] border-[4.379px] border-dashed inset-0 pointer-events-none" />
       </div>
-      <div className="absolute font-['Amazon_Ember_Display:Bold',sans-serif] inset-[71.52%_0.57%_15.24%_-0.57%] leading-[1.1] not-italic opacity-50 text-[#f4f4f4] text-[80.007px] text-center tracking-[0.8001px]">
+      <div className="absolute font-['Ember_Modern_Display_Standard:Bold',sans-serif] inset-[71.52%_0.57%_15.24%_-0.57%] leading-[1.1] not-italic opacity-50 text-[#f4f4f4] text-[80.007px] text-center tracking-[0.8001px]">
         <p className="mb-0">Replace me</p>
         <p>with Artist Imagery</p>
       </div>

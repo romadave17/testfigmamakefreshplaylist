@@ -1,35 +1,69 @@
 @custom-variant dark (&:is(.dark *));
 
-/* Amazon Ember Font - Loaded from Google Drive */
+/* Amazon Ember Font Faces - Using jsDelivr CDN */
+/* Updated Font File Names and Weights */
+
+/* 1. Amazon Ember Regular (Standard Weight - 400) */
 @font-face {
   font-family: 'Amazon Ember';
-  src: url('https://drive.google.com/uc?export=download&id=1d60jrVZ3OV74CL_sCGtYzP_xi1RWMtSH') format('truetype');
+  src: local('Amazon Ember'), 
+       local('AmazonEmber-Regular'),
+       url('https://cdn.jsdelivr.net/gh/romadave17/Testfigmamakefreshplaylist@main/fonts/AmazonEmber_Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
+  /* Fallback to system fonts if CDN fails */
 }
 
+/* 2. Amazon Ember Bold (Bold Weight - 700) */
 @font-face {
   font-family: 'Amazon Ember';
-  src: url('https://drive.google.com/uc?export=download&id=15fK8mZCQHzgGRPc8adDTU740W60ORoqK') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Amazon Ember';
-  src: url('https://drive.google.com/uc?export=download&id=1AZzwssb-QC-gi9yff0Gt3ILRjlktLag6') format('truetype');
+  src: local('Amazon Ember Bold'),
+       local('AmazonEmber-Bold'),
+       url('https://cdn.jsdelivr.net/gh/romadave17/Testfigmamakefreshplaylist@main/fonts/AmazonEmber_Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
-/* Fallback to Inter if Amazon Ember files are not available */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+/* 3. Amazon Ember Medium (Medium Weight - 500) */
+@font-face {
+  font-family: 'Amazon Ember';
+  src: local('Amazon Ember Medium'),
+       local('AmazonEmber-Medium'),
+       url('https://cdn.jsdelivr.net/gh/romadave17/Testfigmamakefreshplaylist@main/fonts/AmazonEmber_Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Ember Modern Display Standard - Alias for Amazon Ember */
+/* This ensures compatibility with template font-family references */
+
+/* 4. Ember Modern Display Standard Regular */
+@font-face {
+  font-family: 'Ember_Modern_Display_Standard:Regular';
+  src: local('Amazon Ember'),
+       local('AmazonEmber-Regular'),
+       url('https://cdn.jsdelivr.net/gh/romadave17/Testfigmamakefreshplaylist@main/fonts/AmazonEmber_Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 5. Ember Modern Display Standard Bold */
+@font-face {
+  font-family: 'Ember_Modern_Display_Standard:Bold';
+  src: local('Amazon Ember Bold'),
+       local('AmazonEmber-Bold'),
+       url('https://cdn.jsdelivr.net/gh/romadave17/Testfigmamakefreshplaylist@main/fonts/AmazonEmber_Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 
 :root {
-  --font-family: 'Amazon Ember', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  --font-family: 'Amazon Ember', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
   --font-size: 16px;
   --background: #ffffff;
   --foreground: oklch(0.145 0 0);
